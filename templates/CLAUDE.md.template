@@ -1,0 +1,49 @@
+# {BRAND_NAME} — Workspace Context
+
+{ONE_LINER}
+
+This file is the entry point for every Claude Code session in this directory. It tells Claude where to find specific business context for specific kinds of work.
+
+## When to read which file
+
+| Task | Read these |
+|---|---|
+| Writing ad copy | `context/voice.md`, `context/positioning.md`, `context/audience.md` |
+| Social media post | `context/voice.md`, `context/audience.md`, `context/results.md` |
+| Web copy / landing page | `context/voice.md`, `context/positioning.md`, `context/offers.md`, `context/results.md` |
+| Strategy / business decisions | All 8 context files |
+| Pricing / new offer design | `context/offers.md`, `context/results.md`, `context/audience.md` |
+| Sales call talking points | `context/audience.md`, `context/results.md`, `context/offers.md` |
+| Funnel design / customer journey | `context/funnel.md`, `context/audience.md`, `context/offers.md` |
+| Brand voice questions | `context/voice.md` only |
+| Competitor analysis | `context/positioning.md`, `context/audience.md`, `context/offers.md` |
+
+## Quick reference
+
+- **Brand name:** {BRAND_NAME}
+- **One-liner:** {ONE_LINER}
+- **Full identity:** `context/identity.md`
+- **ICP profile:** `context/audience.md`
+- **Brand voice rules:** `context/voice.md`
+- **Offer ladder:** `context/offers.md`
+- **Proof + case studies:** `context/results.md`
+- **Funnel architecture:** `context/funnel.md`
+- **Proprietary framework:** `context/frameworks.md`
+
+## Files
+
+```
+./
+├── CLAUDE.md              # this router
+└── context/
+    ├── identity.md        # who the business is
+    ├── audience.md        # who you sell to (ICP)
+    ├── voice.md           # how the brand talks
+    ├── positioning.md     # what you sell + anti-positioning
+    ├── offers.md          # full offer ladder, pricing
+    ├── results.md         # case studies, proof
+    ├── funnel.md          # customer journey
+    └── frameworks.md      # proprietary methodology / IP
+```
+
+Edit any of these anytime - they're just Markdown. The next Claude Code session picks up changes automatically.
